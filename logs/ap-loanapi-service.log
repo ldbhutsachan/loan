@@ -1,0 +1,630 @@
+2024-10-21 09:23:55.151  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-10-21 09:23:55.152  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\security\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-10-21 09:23:55.152  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-21 09:23:55.494  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] com.ldb.loanapi.LoanApiApplication       : The following profiles are active: prod
+2024-10-21 09:23:56.429  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-10-21 09:23:56.485  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 9 JPA repository interfaces.
+2024-10-21 09:23:56.671  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b376fe-7bd1-3371-bf9e-68f9357e6d19
+2024-10-21 09:23:56.894  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@19b6d17a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:23:56.908  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:23:57.302  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23532 (http)
+2024-10-21 09:23:57.380  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1874 ms
+2024-10-21 09:23:57.574  WARN [ap-loanapi-service,,,] 36824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21 09:23:57.691  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:23:57.983  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:23:58.000  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:23:58.315 DEBUG [ap-loanapi-service,,,] 36824 --- [restartedMain] c.l.l.S.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-10-21 09:23:58.861  INFO [ap-loanapi-service,,,] 36824 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:23:59.005 DEBUG [ap-loanapi-service,,,] 36824 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/loanapi-prod/api/v1/custom/authenticate/**']
+2024-10-21 09:23:59.005 DEBUG [ap-loanapi-service,,,] 36824 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/loanapi-prod/api/v1/**']
+2024-10-21 09:23:59.009 DEBUG [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:23:59.010 DEBUG [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:23:59.012  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3886ccc3, org.springframework.security.web.context.SecurityContextPersistenceFilter@15406f0d, org.springframework.security.web.header.HeaderWriterFilter@32a701cc, org.springframework.web.filter.CorsFilter@336b2079, org.springframework.security.web.authentication.logout.LogoutFilter@58674b87, com.ldb.loanapi.Security.jwt.JwtAuthenticationFilter@2d72dc22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42fafa9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33ca39aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e5743b, org.springframework.security.web.session.SessionManagementFilter@4377f02, org.springframework.security.web.access.ExceptionTranslationFilter@7472b9eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@451058bb]
+2024-10-21 09:23:59.022 DEBUG [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:23:59.208  WARN [ap-loanapi-service,,,] 36824 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#saveProvince(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#updateProvince(ProvinceEntity, HttpServletRequest) mapped.
+2024-10-21 09:23:59.208  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:23:59.209  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:23:59.227  INFO [ap-loanapi-service,,,] 36824 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 09:23:59.229 ERROR [ap-loanapi-service,,,] 36824 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#saveProvince(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#updateProvince(ProvinceEntity, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ldb.loanapi.LoanApiApplication.main(LoanApiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#saveProvince(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#updateProvince(ProvinceEntity, HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 22 common frames omitted
+
+2024-10-21 09:27:57.239  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-10-21 09:27:57.241  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\security\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-10-21 09:27:57.241  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-21 09:27:57.550  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] com.ldb.loanapi.LoanApiApplication       : The following profiles are active: prod
+2024-10-21 09:27:58.475  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-10-21 09:27:58.537  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 9 JPA repository interfaces.
+2024-10-21 09:27:58.738  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b376fe-7bd1-3371-bf9e-68f9357e6d19
+2024-10-21 09:27:58.925  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@19b6d17a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:27:58.937  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:27:59.292  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23532 (http)
+2024-10-21 09:27:59.378  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1819 ms
+2024-10-21 09:27:59.560  WARN [ap-loanapi-service,,,] 36108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21 09:27:59.670  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:27:59.949  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:27:59.967  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:28:00.310 DEBUG [ap-loanapi-service,,,] 36108 --- [restartedMain] c.l.l.S.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-10-21 09:28:00.766  INFO [ap-loanapi-service,,,] 36108 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:28:00.909 DEBUG [ap-loanapi-service,,,] 36108 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/loanapi-prod/api/v1/custom/authenticate/**']
+2024-10-21 09:28:00.910 DEBUG [ap-loanapi-service,,,] 36108 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/loanapi-prod/api/v1/**']
+2024-10-21 09:28:00.914 DEBUG [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:28:00.914 DEBUG [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:28:00.918  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d21e364, org.springframework.security.web.context.SecurityContextPersistenceFilter@408ca88, org.springframework.security.web.header.HeaderWriterFilter@643bb4b6, org.springframework.web.filter.CorsFilter@2929de0f, org.springframework.security.web.authentication.logout.LogoutFilter@5e0967b7, com.ldb.loanapi.Security.jwt.JwtAuthenticationFilter@155ddc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7604024, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b838a57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23ce9eeb, org.springframework.security.web.session.SessionManagementFilter@57d15073, org.springframework.security.web.access.ExceptionTranslationFilter@1fb22186, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66ef7851]
+2024-10-21 09:28:00.927 DEBUG [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:28:01.092  WARN [ap-loanapi-service,,,] 36108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#updateProvince(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#getProvinceView(ProvinceEntity, HttpServletRequest) mapped.
+2024-10-21 09:28:01.093  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:28:01.094  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:28:01.116  INFO [ap-loanapi-service,,,] 36108 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 09:28:01.118 ERROR [ap-loanapi-service,,,] 36108 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#updateProvince(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#getProvinceView(ProvinceEntity, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ldb.loanapi.LoanApiApplication.main(LoanApiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#updateProvince(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#getProvinceView(ProvinceEntity, HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 22 common frames omitted
+
+2024-10-21 09:30:23.747  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-10-21 09:30:23.748  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\security\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-10-21 09:30:23.748  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-21 09:30:24.016  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] com.ldb.loanapi.LoanApiApplication       : The following profiles are active: prod
+2024-10-21 09:30:24.938  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-10-21 09:30:24.983  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 9 JPA repository interfaces.
+2024-10-21 09:30:25.133  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b376fe-7bd1-3371-bf9e-68f9357e6d19
+2024-10-21 09:30:25.295  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4434256e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:30:25.308  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:30:25.639  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23532 (http)
+2024-10-21 09:30:25.707  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1682 ms
+2024-10-21 09:30:25.877  WARN [ap-loanapi-service,,,] 28420 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21 09:30:25.985  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:30:26.223  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:30:26.244  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:30:26.542 DEBUG [ap-loanapi-service,,,] 28420 --- [restartedMain] c.l.l.S.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-10-21 09:30:26.907  INFO [ap-loanapi-service,,,] 28420 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:30:27.029 DEBUG [ap-loanapi-service,,,] 28420 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/loanapi-prod/api/v1/custom/authenticate/**']
+2024-10-21 09:30:27.030 DEBUG [ap-loanapi-service,,,] 28420 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/loanapi-prod/api/v1/**']
+2024-10-21 09:30:27.033 DEBUG [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:30:27.034 DEBUG [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:30:27.036  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24508da8, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b4d38f8, org.springframework.security.web.header.HeaderWriterFilter@6933f5c, org.springframework.web.filter.CorsFilter@7fdf003f, org.springframework.security.web.authentication.logout.LogoutFilter@7c203f60, com.ldb.loanapi.Security.jwt.JwtAuthenticationFilter@55149db3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@202508dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@283567b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@200eb7d2, org.springframework.security.web.session.SessionManagementFilter@4b6ffdc0, org.springframework.security.web.access.ExceptionTranslationFilter@5a5ddb8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2728a25e]
+2024-10-21 09:30:27.044 DEBUG [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:30:27.216  WARN [ap-loanapi-service,,,] 28420 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#getProvinceView(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#saveProvince(ProvinceEntity, HttpServletRequest) mapped.
+2024-10-21 09:30:27.217  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:30:27.217  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:30:27.233  INFO [ap-loanapi-service,,,] 28420 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 09:30:27.235 ERROR [ap-loanapi-service,,,] 28420 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#getProvinceView(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#saveProvince(ProvinceEntity, HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ldb.loanapi.LoanApiApplication.main(LoanApiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'provinceController' method 
+com.ldb.loanapi.controller.ProvinceController#getProvinceView(ProvinceEntity, HttpServletRequest)
+to {POST /loanapi-prod/api/v1/custom/authenticate/province.service, produces [application/json]}: There is already 'provinceController' bean method
+com.ldb.loanapi.controller.ProvinceController#saveProvince(ProvinceEntity, HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 22 common frames omitted
+
+2024-10-21 09:31:12.349  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-10-21 09:31:12.350  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\security\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-10-21 09:31:12.350  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-21 09:31:12.636  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] com.ldb.loanapi.LoanApiApplication       : The following profiles are active: prod
+2024-10-21 09:31:13.137  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-10-21 09:31:13.187  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 9 JPA repository interfaces.
+2024-10-21 09:31:13.343  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b376fe-7bd1-3371-bf9e-68f9357e6d19
+2024-10-21 09:31:13.515  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5f64919a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:31:13.527  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:31:13.869  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23532 (http)
+2024-10-21 09:31:13.945  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2024-10-21 09:31:14.149  WARN [ap-loanapi-service,,,] 29032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21 09:31:14.257  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:31:14.507  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:31:14.523  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:31:14.841 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] c.l.l.S.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-10-21 09:31:15.227  INFO [ap-loanapi-service,,,] 29032 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:31:15.372 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/loanapi-prod/api/v1/custom/authenticate/**']
+2024-10-21 09:31:15.372 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/loanapi-prod/api/v1/**']
+2024-10-21 09:31:15.377 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:31:15.378 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:31:15.382  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a10be81, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f25e54d, org.springframework.security.web.header.HeaderWriterFilter@27ecb3fe, org.springframework.web.filter.CorsFilter@77885e75, org.springframework.security.web.authentication.logout.LogoutFilter@5d44510f, com.ldb.loanapi.Security.jwt.JwtAuthenticationFilter@54650686, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1430366c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@392f8762, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dcf8f10, org.springframework.security.web.session.SessionManagementFilter@4c71e4fb, org.springframework.security.web.access.ExceptionTranslationFilter@45d126d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a5178de]
+2024-10-21 09:31:15.391 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:31:15.789  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-21 09:31:15.908  WARN [ap-loanapi-service,,,] 29032 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2024-10-21 09:31:15.934  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-10-21 09:31:15.965 DEBUG [ap-loanapi-service,,,] 29032 --- [restartedMain] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=com.ldb.loanapi.config.WebSecurityConfig$$EnhancerBySpringCGLIB$$9ccdef92@27928052}
+2024-10-21 09:31:16.001  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 23532 (http) with context path ''
+2024-10-21 09:31:16.067  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2024-10-21 09:31:16.312  WARN [ap-loanapi-service,,,] 29032 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'provinceRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.ProvinceRepository.deleteById(java.lang.Long)! No property id found for type ProvinceEntity!
+2024-10-21 09:31:16.314  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:31:16.314  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:31:16.389  INFO [ap-loanapi-service,,,] 29032 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 09:31:16.391 ERROR [ap-loanapi-service,,,] 29032 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'provinceRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.ProvinceRepository.deleteById(java.lang.Long)! No property id found for type ProvinceEntity!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1828)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ldb.loanapi.LoanApiApplication.main(LoanApiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.ProvinceRepository.deleteById(java.lang.Long)! No property id found for type ProvinceEntity!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:332)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:95)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 29 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property id found for type ProvinceEntity!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:82)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:251)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:252)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:381)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:382)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:97)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 54 common frames omitted
+
+2024-10-21 09:32:55.847  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-10-21 09:32:55.848  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\security\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-10-21 09:32:55.848  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-21 09:32:56.122  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] com.ldb.loanapi.LoanApiApplication       : The following profiles are active: prod
+2024-10-21 09:32:56.912  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-10-21 09:32:56.961  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 9 JPA repository interfaces.
+2024-10-21 09:32:57.121  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b376fe-7bd1-3371-bf9e-68f9357e6d19
+2024-10-21 09:32:57.288  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2de437ed' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:32:57.301  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:32:57.657  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23532 (http)
+2024-10-21 09:32:57.732  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1599 ms
+2024-10-21 09:32:57.924  WARN [ap-loanapi-service,,,] 37132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21 09:32:58.028  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:32:58.270  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:32:58.288  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:32:58.595 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] c.l.l.S.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-10-21 09:32:58.981  INFO [ap-loanapi-service,,,] 37132 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:32:59.111 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/loanapi-prod/api/v1/custom/authenticate/**']
+2024-10-21 09:32:59.112 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/loanapi-prod/api/v1/**']
+2024-10-21 09:32:59.117 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:32:59.117 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:32:59.122  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7212e56d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f965a83, org.springframework.security.web.header.HeaderWriterFilter@7bd37ee9, org.springframework.web.filter.CorsFilter@69f56618, org.springframework.security.web.authentication.logout.LogoutFilter@1466800f, com.ldb.loanapi.Security.jwt.JwtAuthenticationFilter@54a75550, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1047399e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c450233, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14736749, org.springframework.security.web.session.SessionManagementFilter@56bf75a4, org.springframework.security.web.access.ExceptionTranslationFilter@3727f836, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77885e75]
+2024-10-21 09:32:59.132 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:32:59.494  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-21 09:32:59.607  WARN [ap-loanapi-service,,,] 37132 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2024-10-21 09:32:59.636  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-10-21 09:32:59.670 DEBUG [ap-loanapi-service,,,] 37132 --- [restartedMain] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=com.ldb.loanapi.config.WebSecurityConfig$$EnhancerBySpringCGLIB$$e1aa7b17@306fad74}
+2024-10-21 09:32:59.693  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 23532 (http) with context path ''
+2024-10-21 09:32:59.762  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2024-10-21 09:32:59.883  WARN [ap-loanapi-service,,,] 37132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'districtRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.DistrictRepository.deleteById(java.lang.Long)! No property id found for type DistrictEntity!
+2024-10-21 09:32:59.884  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:32:59.885  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:32:59.962  INFO [ap-loanapi-service,,,] 37132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 09:32:59.965 ERROR [ap-loanapi-service,,,] 37132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'districtRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.DistrictRepository.deleteById(java.lang.Long)! No property id found for type DistrictEntity!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1828)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ldb.loanapi.LoanApiApplication.main(LoanApiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.DistrictRepository.deleteById(java.lang.Long)! No property id found for type DistrictEntity!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:332)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:95)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 29 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property id found for type DistrictEntity!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:82)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:251)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:252)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:381)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:382)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:97)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 54 common frames omitted
+
+2024-10-21 09:35:13.180  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-10-21 09:35:13.180  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Asus\.m2\repository\com\oracle\database\security\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/Asus/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-10-21 09:35:13.180  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-21 09:35:13.486  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] com.ldb.loanapi.LoanApiApplication       : The following profiles are active: prod
+2024-10-21 09:35:14.024  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-10-21 09:35:14.070  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 9 JPA repository interfaces.
+2024-10-21 09:35:14.225  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b376fe-7bd1-3371-bf9e-68f9357e6d19
+2024-10-21 09:35:14.395  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@143c98f9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:35:14.408  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-21 09:35:14.748  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23532 (http)
+2024-10-21 09:35:14.821  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1326 ms
+2024-10-21 09:35:14.999  WARN [ap-loanapi-service,,,] 26200 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21 09:35:15.103  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:35:15.356  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:35:15.371  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2024-10-21 09:35:15.669 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] c.l.l.S.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-10-21 09:35:16.054  INFO [ap-loanapi-service,,,] 26200 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:35:16.183 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/loanapi-prod/api/v1/custom/authenticate/**']
+2024-10-21 09:35:16.183 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/loanapi-prod/api/v1/**']
+2024-10-21 09:35:16.187 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:35:16.188 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:35:16.191  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fdf003f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4381f83e, org.springframework.security.web.header.HeaderWriterFilter@60ff0d97, org.springframework.web.filter.CorsFilter@200eb7d2, org.springframework.security.web.authentication.logout.LogoutFilter@5dabe5a2, com.ldb.loanapi.Security.jwt.JwtAuthenticationFilter@6311929c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b1f429d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@117100c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6efa0d31, org.springframework.security.web.session.SessionManagementFilter@31694f10, org.springframework.security.web.access.ExceptionTranslationFilter@1637d612, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c8cbc58]
+2024-10-21 09:35:16.200 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2024-10-21 09:35:16.556  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-21 09:35:16.667  WARN [ap-loanapi-service,,,] 26200 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2024-10-21 09:35:16.691  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-10-21 09:35:16.719 DEBUG [ap-loanapi-service,,,] 26200 --- [restartedMain] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=com.ldb.loanapi.config.WebSecurityConfig$$EnhancerBySpringCGLIB$$9c7739fb@57eb142c}
+2024-10-21 09:35:16.744  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 23532 (http) with context path ''
+2024-10-21 09:35:16.814  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2024-10-21 09:35:16.936  WARN [ap-loanapi-service,,,] 26200 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'villageRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.VillageRepository.deleteById(java.lang.Long)! No property id found for type VillageEntity!
+2024-10-21 09:35:16.936  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21 09:35:16.938  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-21 09:35:17.010  INFO [ap-loanapi-service,,,] 26200 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-21 09:35:17.013 ERROR [ap-loanapi-service,,,] 26200 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'villageRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.VillageRepository.deleteById(java.lang.Long)! No property id found for type VillageEntity!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1828)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.ldb.loanapi.LoanApiApplication.main(LoanApiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.ldb.loanapi.Repositories.VillageRepository.deleteById(java.lang.Long)! No property id found for type VillageEntity!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:332)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:95)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 29 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property id found for type VillageEntity!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:82)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:251)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:252)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:381)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:382)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:97)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 54 common frames omitted
+

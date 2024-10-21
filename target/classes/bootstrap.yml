@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ap-loanapi-service
+  profiles:
+    active: ${PROFILE_ACTIVE:prod}
+#  logstash:
+#    server: ${LOG_STASH_SERVER:128.199.79.133}
+#    port: ${LOG_STASH_PORT:5045}
+  apps:
+    package: com.ldb.loanapi
+    logging:
+      level-info: INFO
+      level-debug: DEBUG
+      level-error: ERROR
+logging:
+  level:
+    org.springframework.security: DEBUG
+server:
+  port: ${GATEWAY_LDB_SVC_PORT:23532}
